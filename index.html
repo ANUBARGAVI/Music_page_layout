@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Tutorial</title>
+    <style>
+        .no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .no-gutters > [class*='col-'] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .navbar {
+            padding: 0; /* Remove padding from navbar */
+            margin: 0;  /* Remove margin from navbar */
+        }
+        .container-fluid {
+            padding: 0; /* Remove padding from container-fluid */
+        }
+        .carousel-item img {
+            height: 280px; /* Set the static height */
+            object-fit: cover; /* Ensure the image covers the entire area */
+        }
+        .custom-bg-def9c4 {
+        background-color: #DEF9C4;
+        padding: 10px; /* Adjust padding as needed */
+        border-radius: 5px; /* Optional: Add rounded corners */
+    }
+    .custom-bg-d6efd8 {
+        background-color: #D6EFD8;
+        padding: 10px; /* Adjust padding as needed */
+        border-radius: 5px; /* Optional: Add rounded corners */
+    }
+    .custom-bg-405d72 {
+        background-color: #405D72;
+        color: #fff; 
+        padding: 10px; 
+        border-radius: 5px; 
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center p-0 m-0">
+        <div class="row no-gutters">
+            <div class="col-2 p-0 m-0 custom-bg-def9c4">
+                <h6 class="text-secondary p-2 m-1">Rooms</h6>
+                
+
+                <div class="container">
+                    <p class="text-secondary" >Music</p>
+                    <ul class="list-unstyled ">
+                        <li class="py-2  m-1"><i class="fas fa-music"></i> Songs</li>
+                        <li class="py-2 m-1"> <i class="fas fa-compact-disc"></i> Albums</li>
+                        <li class="py-2 m-1"><i class="fas fa-folder"></i> Local Files</li>
+                        <li class="py-2 m-1"><i class="fas fa-heart"></i> Liked</li>
+                      </ul>
+
+                      <p class="text-secondary" >Your Playlist</p>
+                      <ul class="list-unstyled ">
+                          <li class="py-2 m-1"> Lowfi Chill</li>
+                          <li class="py-2 m-1">Albums</li>
+                          <li class="py-2 m-1">Local Files</li>
+                          <li class="py-2 m-1">Acoustic Classics</li>
+                          <li class="py-2 m-1"> Rain</li>
+                          <li class="py-2 m-1">Albums</li>
+                          <li class="py-2 m-1">Classy Jazz</li>
+                          <li class="py-2 m-1">Korean</li>
+                        </ul>
+                        
+                        <button style="border-radius: 20px;" type="button" class="btn btn-secondary">+ create new</button>
+                        
+                      
+                        <div class="image" style="width: 16rem;">
+                            <div class="col-8 m-2 p-2">
+                                <img src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" tyle="height:40px "  class="card-img-top" alt="...">
+                            </div>
+                           
+                       </div>
+                       
+                </div>
+            </div>
+            <div class="col-8 p-0 m-0 custom-bg-d6efd8">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid p-0 m-0">
+                      <a class="navbar-brand" href="#"><i class="fas fa-question"></i> Nueos</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Network sharing
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                aniya miles
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+
+                  <div class="container">
+                    <p class="p-1  text-start text-secondary m-1">Featured</p>
+                    <h3 class="px-1 m-1 h-3 text-start ">Albums</h3>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card " style="width: 16rem;">
+                                <img src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" tyle="height:220px "  class="card-img-top" alt="...">
+                                <div class=" m-0 p-0 card-body">
+                                    <h5 style="font-size: 14px;" class="card-title m-1 p-0 fw-bold h-6" >The Dreamer</h5>
+                                    <p style="font-size: 12px;" class="card-text text-secondary m-0 p-0 ">HIUDX.</p>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card " style="width: 16rem;">
+                                <img src="./images/WhatsApp Image 2024-07-06 at 1.46.21 PM (1).jpeg" tyle="height:220px "  class="card-img-top" alt="...">
+                                <div class=" m-0 p-0 card-body">
+                                    <h5 style="font-size: 14px;" class="card-title m-1 p-0 fw-bold h-6" >The Dreamer</h5>
+                                    <p style="font-size: 12px;" class="card-text text-secondary m-0 p-0 ">HIUDX.</p>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card " style="width: 16rem; ">
+                                <img src="./images/WhatsApp Image 2024-07-06 at 1.46.21 PM.jpeg" style="height:240px " class=" card-img-top" alt="...">
+                                <div class=" m-0 p-0 card-body">
+                                  <h5 style="font-size: 14px;" class="card-title m-1 p-0 fw-bold h-6" >The Dreamer</h5>
+                                  <p style="font-size: 12px;" class="card-text text-secondary m-0 p-0 ">HIUDX.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row m-2 p-3">
+                        <div class="col-8 text-start">
+                            <p class="text-secondary p-0 m-0">playlist</p>
+                            <h3 class="text p-0 m-0 fw-bold"> Recently Added</h3>
+                            <div class="row">
+                                <div class="col-4 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 mx-5"> Title</p>
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Artist</p> 
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> Added</p> 
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Time </p>  
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="p-1 m-1">stay</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="p-1 m-1">BLACKPINK</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class=" p-1 m-1">Square Two</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class=" p-1 m-1"> 3 days ago</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">4:31 </p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                        
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">Cringe</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1 ">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Matt Maeson</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Cringe</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> 4 Days ago</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">2:34</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">Nothing into Somethigs</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Lovers</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Anna of </p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> 4 Days ago</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">7:30</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">Lovers</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Drake</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1 ">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> last week</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">6:45</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">Paradise</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Hyolet</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> last week</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">5:08</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">stay</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Artist</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> Added</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">9:07</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">stay</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Artist</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size:8px;"  class="text-secondary p-1 m-1"> Added</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size:8px;"  class="text-secondary p-1 m-1">6:09</p>
+                                       
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    
+                                    <div class="row">
+                                        <div class="col-11 my-1">
+                                            <img style="width: 30px; height: 30px;border-radius: 3px;" src="./images/WhatsApp Image 2024-07-06 at 1.46.20 PM.jpeg" alt="">
+                                            <span style="font-size: 8px;"  class="px-2">stay</span>
+                                        </div>
+                                      
+                                    </div>
+                                 
+
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Artist</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">Album</p>
+                                    
+                                    
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1"> Added</p>
+                                   
+                                </div>
+                                <div class="col-2 my-1">
+                                    <p style="font-size: 8px;"  class="text-secondary p-1 m-1">8:09</p>
+                                       
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="col-4 text-start">
+                            <p class="text-secondary p-0 m-0 ">popular</p>
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="text p-0 m-0 fw-bold"> Video </h3>
+
+                                </div>
+                                <div class="col-4">
+                                    <p> see more </p>
+
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="row py-2">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./images/pexels-blackphant-21352835.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/pexels-kateryna-tsurik-505461005-24461005.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <img style="width: 90%;" class="m-0 p-0" src="./images/Screenshot from 2024-07-06 15-24-13.png" alt="" srcset="">
+                  </div>
+            </div>
+            <div class="col-2 p-0 m-0 custom-bg-405d72">
+
+                <h5  class="p-2 m-1">
+                    <i class="p-2 m-2" ><span class="far fa-greater-than"></span> </i>  play queue
+                </h5>
+                <h6  class="alert alert-light alert-dismissible fade show p-2 m-1">
+                    Kitchen
+               </h6>
+                <div class="container">
+                    <div class="row py-1 m-1">
+                       <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 mx=0"style="color: #D6EFD8;" >3.37</span></p>
+                    <span class=" px-2 py-0 m-0 " style="color: #D6EFD8;">Anne MArie</span>
+                    </div>
+                    <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 my-0 " style="color: #D6EFD8;">3.37</span></p>
+                     <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0" style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ><i class="fa-sharp fa-solid fa-chart-simple"></i></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 " style="color: #D6EFD8;">Anne MArie</span>
+                     </div>
+
+                </div>
+                  <h6  class="alert alert-light alert-dismissible fade show p-2 m-1 p-2 m-1">
+                     Kitchen
+                </h6>
+                <div class="container">
+                    <div class="row py-1 m-1">
+                       <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                    <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                    </div>
+                    <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 " style="color: #D6EFD8;">3.37</span></p>
+                     <span class="px-2 py-0 m-0 "style="color: #D6EFD8;" >Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 y" style="color: #D6EFD8;">Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1 ">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 " style="color: #D6EFD8;">3.37</span></p>
+                     <span class="px-2 py-0 m-0 " style="color: #D6EFD8;">Anne MArie</span>
+                     </div>
+                     <div class="row py-1 m-1">
+                        <p class="py-0 m-0 "><span class="px-1 my-0  mx-1" ></span> rain with you <span class="px-2 my-0 "style="color: #D6EFD8;" >3.37</span></p>
+                     <span class="px-2 py-0 m-0 " style="color: #D6EFD8;">Anne MArie</span>
+                     </div>
+                     
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
